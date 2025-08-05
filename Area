@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int s1, s2, num;
+    printf("Enter the number of sides:");
+        scanf("%d", &num);
+    if(num==1)
+    {
+        printf("Length of the sides:");
+        scanf("%d", &s1);
+        int area=s1*s1;
+        printf("The area of square is:%d\n", area);
+    }
+    else if(num==2)
+    {
+        printf("Length of the sides:");
+        scanf("%d %d", &s1, &s2);
+        int area2=s1*s2;
+        printf("The area of the rectangle is:%d\n", area2);
+     }
+    else if(num==3)
+    {
+        printf("Length of base and height:");
+        scanf("%d %d", &s1, &s2);
+        int area3=0.5*s1*s2;
+        printf("The area of the triangle is:%d\n", area3);
+    }
+     return 0;
+}
