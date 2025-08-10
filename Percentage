@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+int scored, total;
+float perc;
+    printf("Enter the marks obtained:");
+        scanf("%d", &scored);
+    printf("Enter total marks obtainable:");
+        scanf("%d", &total);
+    
+    perc=(scored*100) / total;
+    
+    printf("total percentage %f\n", perc);
+    return 0;
+}
