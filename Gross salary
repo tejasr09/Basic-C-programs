@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int sal;
+    int allowance, gross, rent;
+    printf("Enter basic salary of the employee:");
+    scanf("%d", &sal);
+    
+        allowance=(sal * 40)/100;
+        rent=(sal * 20)/100;
+        gross=sal+allowance+rent;
+            
+    printf("The allowance is %d\n", allowance);
+    printf("The rent is %d\n", rent);
+    printf("The gross salary is %d\n", gross);
+    return 0;
+}
