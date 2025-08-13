@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int scored, m1, m2, m3, m4, m5, total=500;
+    float perc;
+    printf("Enter the marks obtained by the student:");
+    scanf("%d %d %d %d %d", &m1, &m2, &m3, &m4, &m5);
+    
+        scored=m1+m2+m3+m4+m5;
+        perc=(scored/500.0)*100;
+
+    printf("The total obtained is %d/500\n", scored);
+    printf("Marks entered are %d, %d, %d, %d, %d\n", m1, m2, m3, m4, m5);
+    printf("The percentage secured is %f", perc);
+    return 0;
+}
