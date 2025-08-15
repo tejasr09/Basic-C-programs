@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+int cost, selP, profit, loss;
+    printf("Enter the cost of the item(in Rupees) : Rs.");
+        scanf("%d", &cost);
+    printf("Enter the selling price of the item : Rs.");
+        scanf("%d", &selP);
+        
+    if(cost<selP)
+    {
+        printf("The seller made a profit");
+        
+            profit=selP-cost;
+            
+        printf(" of Rs.%d", profit);
+    }
+    else if(cost>selP)
+    {
+        printf("The seller made a loss");
+        
+            loss=cost-selP;
+            
+        printf(" of Rs.%d", loss);
+    }
+return 0;
+}
