@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+int  item, selP, profit, cost;
+    printf("Enter the total number of items:");
+        scanf("%d", &item);
+    printf("Enter the total selling price of the items:");
+        scanf("%d", &selP);
+    printf("Enter the total profit:");
+        scanf("%d", &profit);
+        
+        cost=(selP-profit)/item;
+        
+    printf("The cost of each item is %d", cost);
+    
+return 0;
+}
