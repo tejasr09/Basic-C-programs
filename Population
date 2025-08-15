@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+int m, f, l, Lm, Lw, total;
+int perM, perL, perLm;
+    printf("What is the total population of the town?(in numbers)");
+        scanf("%d", &total);
+    printf("What is the total percentage of male?(in %)");
+        scanf("%d", &perM);
+    printf("Total percentage of literates:");
+        scanf("%d", &perL);
+    printf("Percentage of literate MEN:");
+        scanf("%d", &perLm);
+    
+        m=(perM/100.0)*total;
+        f=total-m;
+        l=(perL/100.0)*total;
+        Lm=(perLm/100.0)*total;
+        Lw=l-Lm;
+    
+printf("The total no of men is %d\n", m);
+printf("The total no of women is %d\n", f);
+printf("The total no of literates is %d\n", l);
+printf("The toal no of literate MEN is %d\n", Lm);
+printf("The total no of literate WOMEN is %d\n", Lw);
+return 0;
+}
