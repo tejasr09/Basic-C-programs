@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+int amt, rem1, rem2, rem3, num1, num2;
+    printf("Enter the total amount:");
+        scanf("%d", &amt);
+    
+        rem1=amt/100;
+            num1=amt-(100*rem1);
+        rem2=num1/50;
+            num2=amt-(100*rem1)-(50*rem2);
+        rem3=num2/10;
+        
+    printf("The num of 100's notes to be given is %d\n", rem1);
+    printf("The num of 50's notes to be given is %d\n", rem2);
+    printf("The num of 10's notes to be given is %d\n", rem3);
+return 0;
+}
