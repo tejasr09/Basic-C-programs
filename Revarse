@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  int num, rev=0, rem;
+    printf("Enter the 5-digit num:");
+        scanf("%d", &num);
+        
+    if(num<10000 || num>99999)
+    {
+        printf("Invalid : Enter a valid 5-digit number");
+        return 1;
+    }
+    while(num!=0)
+    {
+        rem=num%10;
+        rev=rev*10+rem;
+        num=num/10;
+    }
+    printf("The reversed number is %d", rev);
+    return 0;
+}
