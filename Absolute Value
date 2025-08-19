@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float num, absV;
+        printf("Enter the number:");
+            scanf("%f", &num);
+            
+        absV=fabs(num);
+        
+        printf("The absolute value of %f is %f.", num, absV);
+    return 0;
+}
