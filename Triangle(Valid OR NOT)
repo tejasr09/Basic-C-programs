@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int ang1, ang2, ang3, total;
+        printf("Enter the angles of the 3 vertices:");
+            scanf("%d %d %d", &ang1, &ang2, &ang3);
+        
+        total=ang1+ang2+ang3;
+        
+        if(total!=180)
+        {
+            printf("The given trinangle is not valid.");
+        }
+        else if(total==180)
+        {
+            printf("The given triangle is valid.");
+        }
+    return 0;
+}
