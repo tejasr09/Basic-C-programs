@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+int x1, y1;
+    printf("Enter the coordinates of the point:");
+        scanf("%d %d", &x1, &y1);
+    
+    if(x1==0 && y1==0)
+    {
+        printf("It is the origin.\n(-_-)");
+    }
+    else if(x1==0 && y1!=0)
+    {
+        printf("The point lies on the y-axis.\n");
+    }
+    else if(x1!=0 && y1==0)
+    {
+        printf("The point lies on the x-axis.\n");
+    }
+    else
+    {
+        printf("The point lies somewhere on the plane.");
+    }
+   
+    return 0;
+}
