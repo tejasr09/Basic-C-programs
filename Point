@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include<math.h>
+
+int main() {
+int x1, x2, y1, y2, rad;
+float dist;
+    printf("Enter the coordinaes of the centre of the circle:");
+        scanf("%d %d", &x1, &y1);
+    printf("Enter the radius (in sq. units):");
+        scanf("%d", &rad);
+    printf("Enter the coordinates of the point:");
+        scanf("%d %d", &x2, &y2);
+
+        dist=sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+        
+    printf("The distance between the centre and the points is %f\n", dist);
+    
+    if(dist<=rad)
+    {
+        printf("The point is inside/on the circle.");
+    }
+    else if(dist>rad)
+    {
+        printf("The point lies outside the circle.");
+    }
+    return 0;
+}
