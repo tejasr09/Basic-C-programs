@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+int delay;
+    printf("Enter the number of days the books has been delayed:");
+        scanf("%d", &delay);
+    
+    if(delay<=5)
+        printf("Fine=50 paise.");
+    else if(delay>=6 && delay<=10)
+        printf("Fine= 1 rupee");
+    else if(delay>10 && delay<=30)
+        printf("Fine = 5 rupees");
+    else if(delay>30);
+        printf("You'r membership will be cancelled due to your actions.");
+    return 0;
+}
